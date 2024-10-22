@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-view',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './main-view.component.html',
   styleUrl: './main-view.component.css'
 })
-export class MainViewComponent {
+export class MainViewComponent{
 
 }
+
