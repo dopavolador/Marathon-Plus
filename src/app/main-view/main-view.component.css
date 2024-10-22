@@ -101,3 +101,7 @@
   font-weight: 400;
   font-style: normal;
 }
+.nav-link.active{
+  padding: 0px,0px;
+  height: 21px;
+}
