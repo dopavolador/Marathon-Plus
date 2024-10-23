@@ -8,6 +8,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './main-view.component.css'
 })
 export class MainViewComponent{
-
 }
 
