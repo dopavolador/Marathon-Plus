@@ -100,14 +100,3 @@ a:hover {
     margin: 0;
   }
   
-.titleM{
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  color: white;
-  z-index: 2; /* texto por encima */
-  position: relative;
-  zoom: 600%;
-  padding-bottom: 5% ;
-  
-  }
-  
