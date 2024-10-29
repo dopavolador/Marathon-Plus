@@ -1,4 +1,4 @@
-#Marathon Plus
+# Marathon Plus
 
 Este proyecto es una aplicación web desarrollada con Angular que permite gestionar maratones de manera eficiente y amigable. Proporciona funcionalidades para crear maratones, visualizar resultados, gestionar participantes, permitir inscripciones y mucho más.
 
