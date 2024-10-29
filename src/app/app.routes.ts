@@ -1,10 +1,13 @@
 import { Routes } from '@angular/router';
-import { MainViewComponent } from './main-view/main-view.component';
+import { HomeComponent } from './home/home.component';
+import { RacesComponent } from './races/races.component';
+
 
 export const routes: Routes = [
-  {
-    path: '',
-    component: MainViewComponent  // Este será el componente principal
-  },
-  // Otras rutas adicionales, si es necesario
+    {
+        path:'',component: HomeComponent
+    },
+    {
+        path:'carreras',component: RacesComponent
+    }
 ];

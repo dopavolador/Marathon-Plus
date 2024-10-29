@@ -1,17 +1,9 @@
 
-  body{
-    margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    
-  }
   
-  h3, p{
+h3, p{
     margin: 5px;
   }
-
+  
   a{
     background-color: unset;
     border:unset;
@@ -33,7 +25,7 @@
   }
   
   /* Header */
-  header{
+  .cabecita{
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
     margin-bottom: 10px;
     font-size: larger;
@@ -44,7 +36,6 @@
     display: flex;
     justify-content: space-between;
     margin: 0 60px;
-    
   }
   
   header nav div{
@@ -57,85 +48,70 @@
   header nav img{
     height: 25px;
   }
-
-
-
-.fondo-oscuro {
-    background: radial-gradient(circle, #51a6fa,#5badff,#127ce7, #0066cc); /* Gradiente desde #faa922 a #ff7e5f */
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  
+  
+  
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #fff;
-  justify-content: center;
   zoom: 2.3;
   position: relative;
-}
-
-
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  }
+  
+  
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-.nav-link.active{
+  }
+  .nav-link.active{
   padding: 0px,0px;
   height: 21px;
-}
-
-a {
+  }
+  
+  a {
   color: inherit; /* se hereda el colo blanco del padre */
   text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
   text-decoration: underline;
-}
-
-/*Fin configuración Footer*/
-
-.img-logo{
+  }
+  
+  /*Fin configuración Footer*/
+  
+  .img-logo{
   width: 80px;
   height: auto;
   position: relative;
   z-index: 2; /* texto por encima */
   color: white; /* ajusta según el contraste necesario */
-}
-.text-white {
+  }
+  .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-}
-.reditfoot{
-  background-color: rgba(94, 110, 255, 0.1); /* gris con 50% de opacidad */  
-  border-radius: 10%;
+  }
+  .reditfoot{
   position: relative;
   z-index: 2; /* texto por encima */
   color: white; /* ajusta según el contraste necesario */
+  }
   
-}
-
-.backgroundpic{
-  display: flex;
-  position: absolute;
-  opacity: 0.7; /* para hacerla más tenue */
-  overflow: hidden; /* oculta las barras de desplazamiento */
-}
-
-html, body{
-  overflow-x:hidden ;
-  margin: 0;
-  padding: 0;
-}
-
-.titleM{
+  .row{
+    display: flex;
+    margin: 0;
+  }
+  
+  .titleM{
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   color: white;
   z-index: 2; /* texto por encima */
   position: relative;
   zoom: 600%;
-  padding-bottom: 7% ;
-
-}
+  padding-bottom: 5% ;
+  
+  }
+  

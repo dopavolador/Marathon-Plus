@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "marathon-plus": {
+    "Marathon-Plus": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "marathon-plus:build:production"
+              "buildTarget": "Marathon-Plus:build:production"
             },
             "development": {
-              "buildTarget": "marathon-plus:build:development"
+              "buildTarget": "Marathon-Plus:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,8 +92,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
