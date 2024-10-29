@@ -24,10 +24,8 @@ a:hover:not(#cart), button:hover{
   
   /* Header */
 .cabecita{
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
     margin-bottom: 10px;
-    font-size: larger;
-    
+    zoom: 1;
   }
   
 .cabecita nav{
@@ -69,7 +67,7 @@ a:hover:not(#cart), button:hover{
   height: 21px;
   }
   
-a {
+.a {
   color: inherit; /* se hereda el colo blanco del padre */
   text-decoration: none;
   }
