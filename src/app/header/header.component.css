@@ -49,7 +49,7 @@ a:hover:not(#cart), button:hover{
   
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #fff;
-  zoom: 2.3;
+  zoom: 3;
   position: relative;
   }
   
