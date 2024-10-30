@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { RacesComponent } from './races/races.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
+import { ResultComponent } from './result/result.component';
 
 
 export const routes: Routes = [
@@ -17,5 +18,8 @@ export const routes: Routes = [
     },
     {
         path:'contact',component: ContactComponent
+    },
+    {
+        path:'result',component: ResultComponent
     }
 ];
