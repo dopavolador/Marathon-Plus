@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 40vh;
     margin: 0;
 }
 .login-container {
@@ -45,3 +45,11 @@ body {
 .login-container a:hover {
     text-decoration: underline;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    margin: 0;
+    display: block;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
