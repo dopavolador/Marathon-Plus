@@ -4,6 +4,9 @@ import { RacesComponent } from './races/races.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResultComponent } from './result/result.component';
+import { SignupComponent } from './signup/signup.component';
+import { RecoveryComponent } from './recovery/recovery.component';
+import { RegisterComponent } from './register/register.component';
 
 
 export const routes: Routes = [
@@ -21,5 +24,15 @@ export const routes: Routes = [
     },
     {
         path:'result',component: ResultComponent
+    },
+    {
+        path:'signup',component: SignupComponent
+    },
+    {
+        path:'recovery',component: RecoveryComponent
+    },
+    {
+        path:'register',component: RegisterComponent
     }
+    
 ];
