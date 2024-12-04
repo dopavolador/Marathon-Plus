@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   standalone: true,
   templateUrl: './recovery.component.html',
   styleUrls: ['./recovery.component.css'],// Asegúrate de usar styleUrls
-  imports: [FormsModule], 
+  imports: [FormsModule, CommonModule],
 })
 export class RecoveryComponent {
   email: string = '';

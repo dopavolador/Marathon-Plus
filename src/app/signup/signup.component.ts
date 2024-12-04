@@ -1,38 +1,60 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [FormsModule], 
+  imports: [FormsModule, CommonModule],
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
-  username: string = '';
+  firstName: string = '';
+  lastName: string = '';
   email: string = '';
   password: string = '';
   confirmPassword: string = '';
   errorMessage: string = '';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   onSubmit(event: Event): void {
-    event.preventDefault(); // Evita el envío del formulario
+    event.preventDefault();
 
-    this.errorMessage = ''; // Limpia mensajes de error previos
+    this.errorMessage = '';
 
     if (this.password !== this.confirmPassword) {
       this.errorMessage = 'Las contraseñas no coinciden.';
       return;
     }
 
-    // Aquí puedes agregar más validaciones o enviar el formulario
-    alert(`Registro exitoso para ${this.username}`);
+    if (!this.firstName || !this.lastName) {
+      this.errorMessage = 'Por favor, completa todos los campos.';
+      return;
+    }
 
-    // Redirigir a la vista anterior (por ejemplo, a la página de inicio)
-    this.router.navigate(['/login']); 
+    const userData = {
+      firstName: this.firstName,
+      lastName: this.lastName,
+      email: this.email,
+      password: this.password
+    };
+
+    this.authService.register(userData).subscribe({
+      next: (response) => {
+        this.router.navigate(['/login']);
+      },
+      error: (error) => {
+        if (error.status === 409) {
+          this.errorMessage = 'El correo electrónico ya está registrado.';
+        } else {
+          this.errorMessage = 'Ocurrió un error inesperado. Intenta de nuevo más tarde.';
+        }
+      }
+    });
 
   }
 }

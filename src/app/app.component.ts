@@ -11,7 +11,6 @@ import { CommonModule } from '@angular/common';
   [
     CommonModule,
     RouterOutlet,
-    RouterLink,
     RouterModule,
     HeaderComponent,
     FooterComponent
