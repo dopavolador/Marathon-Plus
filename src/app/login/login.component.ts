@@ -25,8 +25,8 @@ export class LoginComponent {
 
     this.authService.login(credentials).subscribe({
       next: (response) => {
-        alert(response.message); // Mensaje de éxito
-        this.router.navigate(['/dashboard']); // Redirige al dashboard u otra página
+        localStorage.setItem('authToken', response.token);
+        this.router.navigate(['/']);
       },
       error: (error) => {
         if (error.status === 401) {
